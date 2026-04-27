@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petals and Portraits</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-petal">✿</div>
+      <p>Petals & Portraits</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">P<span>&</span>P</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+       
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-cta" onclick="scrollToSection('contact')">Order Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-shape s1"></div>
+      <div class="hero-shape s2"></div>
+      <div class="hero-shape s3"></div>
+      <div class="hero-shape s4"></div>
+      <div class="hero-shape s5"></div>
+      <div class="hero-petals">
+        <span class="petal p1">✿</span>
+        <span class="petal p2">❀</span>
+        <span class="petal p3">✾</span>
+        <span class="petal p4">✿</span>
+        <span class="petal p5">❁</span>
+        <span class="petal p6">✽</span>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">— Est. 2026 —</div>
+      <h1 class="hero-title">Petals<br/><em>&amp;</em>Portraits</h1>
+      <p class="hero-tagline">Framing Memories, Crafting Emotions</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn btn-primary">Explore Products</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-art">
+            <div class="art-frame">
+              <div class="art-inner">
+                <span class="art-icon">🌸</span>
+                <span class="art-icon">📸</span>
+                <span class="art-icon">👛</span>
+              </div>
+            </div>
+            <div class="about-badge-float">
+              <span>100%</span>
+              <small>Handcrafted</small>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">Where Art Meets<br/><em>Heartfelt Craft</em></h2>
+          <p>At Petals and Portraits, we believe every moment deserves to be cherished forever. Born from a passion for beauty and craftsmanship, we create thoughtful gifts that speak when words fall short.</p>
+          <p>Each piece is handcrafted with intention — from the delicate blooms in our bouquets to the fine stitching on our custom wallets and the artistry behind every frame.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">✦</div>
+              <div>
+                <strong>Creativity</strong>
+                <span>Every piece tells a story</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">✦</div>
+              <div>
+                <strong>Personalization</strong>
+                <span>Made just for you</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">✦</div>
+              <div>
+                <strong>Quality</strong>
+                <span>Premium materials only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Our <em>Services</em></h2>
+        <p class="section-sub">Handcrafted with love, designed to last a lifetime</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <span class="service-emoji">📸</span>
+          </div>
+          <h3>Custom Photo Frames</h3>
+          <p>Turn your favourite memories into timeless wall art. Our frames are crafted from premium wood and materials, personalized with names, dates, and custom designs that make every photo extraordinary.</p>
+          <a href="#contact" class="service-link">Order Now →</a>
+        </div>
+        <div class="service-card featured reveal">
+          <div class="service-icon-wrap">
+            <span class="service-emoji">🌸</span>
+          </div>
+          <h3>Elegant Flower Bouquets</h3>
+          <p>From romantic roses to whimsical wildflowers — our arrangements are curated fresh for every occasion. Weddings, birthdays, or just because — we make petals speak your heart.</p>
+          <a href="#contact" class="service-link">Order Now →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <span class="service-emoji">👛</span>
+          </div>
+          <h3>Custom Name Wallets</h3>
+          <p>Sleek, minimal, and deeply personal. Our wallets are hand-embossed or printed with custom names and designs — perfect as gifts for your loved ones or a stylish statement for yourself.</p>
+          <a href="#contact" class="service-link">Order Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Our <em>Gallery</em></h2>
+        <p class="section-sub">A glimpse into our crafted world</p>
+      </div>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frames">Frames</button>
+        <button class="filter-btn" data-filter="bouquets">Bouquets</button>
+        <button class="filter-btn" data-filter="wallets">Wallets</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-cat="frames">
+          <div class="gallery-card">
+            <div class="gallery-img gi-1">
+              <img src="frame.jpeg" alt="frames">
+              <div class="gi-overlay">
+                <span>Wooden Memory Frame</span>
+                <small>Custom Photo Frames</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-cat="bouquets">
+          <div class="gallery-card">
+            <div class="gallery-img gi-2">
+              <div class="gi-overlay">
+                <span>Rose Garden Bouquet</span>
+                <small>Flower Bouquets</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-cat="wallets">
+          <div class="gallery-card">
+            <div class="gallery-img gi-3">
+              <div class="gi-overlay">
+                <span>Embossed Name Wallet</span>
+                <small>Custom Wallets</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-cat="frames">
+          <div class="gallery-card">
+            <div class="gallery-img gi-4">
+              <div class="gi-overlay">
+                <span>Collage Frame Set</span>
+                <small>Custom Photo Frames</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-cat="bouquets">
+          <div class="gallery-card">
+            <div class="gallery-img gi-5">
+              <div class="gi-overlay">
+                <span>Pastel Dream Bouquet</span>
+                <small>Flower Bouquets</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-cat="wallets">
+          <div class="gallery-card">
+            <div class="gallery-img gi-6">
+              <div class="gi-overlay">
+                <span>Floral Print Wallet</span>
+                <small>Custom Wallets</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-cat="frames">
+          <div class="gallery-card">
+            <div class="gallery-img gi-7">
+              <div class="gi-overlay">
+                <span>Rustic Love Frame</span>
+                <small>Custom Photo Frames</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-cat="bouquets">
+          <div class="gallery-card">
+            <div class="gallery-img gi-8">
+              <div class="gi-overlay">
+                <span>Wildflower Wrap</span>
+                <small>Flower Bouquets</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Place Your <em>Order</em></h2>
+        <p class="section-sub">We'd love to create something special for you</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          
+           
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Call Us</strong>
+              <span>+91 9742954920</span>
+            </div>
+          </div>
+         
+          <div class="contact-socials">
+            <a href="https://www.instagram.com/petels_and_portraits?igsh=MTJrbmlhcXd5bWF3dA==" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            Follow us on Instagram
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Petals <em>&amp;</em> Portraits</div>
+      <p class="footer-tagline">Framing Memories, Crafting Emotions</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2024 Petals and Portraits. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
